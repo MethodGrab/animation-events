@@ -26,11 +26,11 @@ var AnimationEvents = {};
 
 
 var transEndEventNames = {
+	transition       : 'transitionend',
 	WebkitTransition : 'webkitTransitionEnd',
 	MozTransition    : 'transitionend',
 	OTransition      : 'oTransitionEnd',
 	msTransition     : 'MSTransitionEnd',
-	transition       : 'transitionend',
 };
 
 AnimationEvents.transitionEndEventName = function() {
@@ -42,11 +42,11 @@ AnimationEvents.transitionEndEventName = function() {
 
 
 var animIterationEventNames = {
+	animation       : 'animationiteration',
 	WebkitAnimation : 'webkitAnimationIteration',
 	MozAnimation    : 'animationiteration',
 	OAnimation      : 'oAnimationIteration',
 	msAnimation     : 'MSAnimationIteration',
-	animation       : 'animationiteration',
 };
 
 AnimationEvents.animIterationEventName = function() {
