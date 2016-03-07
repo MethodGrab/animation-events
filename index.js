@@ -18,6 +18,7 @@ var test = function( props ) {
 	}
 
 	return false;
+
 };
 
 
@@ -25,11 +26,11 @@ var AnimationEvents = {};
 
 
 var transEndEventNames = {
-	'WebkitTransition' : 'webkitTransitionEnd',
-	'MozTransition'    : 'transitionend',
-	'OTransition'      : 'oTransitionEnd',
-	'msTransition'     : 'MSTransitionEnd',
-	'transition'       : 'transitionend'
+	WebkitTransition : 'webkitTransitionEnd',
+	MozTransition    : 'transitionend',
+	OTransition      : 'oTransitionEnd',
+	msTransition     : 'MSTransitionEnd',
+	transition       : 'transitionend',
 };
 
 AnimationEvents.transitionEndEventName = function() {
@@ -41,11 +42,11 @@ AnimationEvents.transitionEndEventName = function() {
 
 
 var animIterationEventNames = {
-	'WebkitAnimation' : 'webkitAnimationIteration',
-	'MozAnimation'    : 'animationiteration',
-	'OAnimation'      : 'oAnimationIteration',
-	'msAnimation'     : 'MSAnimationIteration',
-	'animation'       : 'animationiteration'
+	WebkitAnimation : 'webkitAnimationIteration',
+	MozAnimation    : 'animationiteration',
+	OAnimation      : 'oAnimationIteration',
+	msAnimation     : 'MSAnimationIteration',
+	animation       : 'animationiteration',
 };
 
 AnimationEvents.animIterationEventName = function() {
