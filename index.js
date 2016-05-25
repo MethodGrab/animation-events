@@ -1,5 +1,26 @@
+// Get the prefixed version of animation events
 // http://stackoverflow.com/questions/2794148/css3-transition-events
 // http://callmenick.com/post/cross-browser-transition-animation-events-modernizr
+
+/*
+	Example:
+	```
+	const animEvents = require( 'anim-events' );
+
+	let transitionendEvent;
+	let animationendEvent;
+
+	// get & cache the prefixed event names
+	const transitionend = (  ) => { return transitionendEvent ? transitionendEvent : animEvents.transitionEndEventName(); };
+	const animationend  = (  ) => { return animationendEvent ? animationendEvent : animEvents.animationEndEventName(); };
+
+	$( '.el' )
+		.addClass( 'is-transitioning' )
+		.one( transitionend(), (  ) => {
+			console.log( 'Transition complete!' );
+		};
+	```
+ */
 
 /* eslint-env browser, amd */
 
