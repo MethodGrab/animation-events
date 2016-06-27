@@ -4,7 +4,8 @@
   "description": "Prefixed CSS animation events helper",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,10 @@
   },
   "homepage": "https://github.com/methodgrab/anim-events.js#readme",
   "devDependencies": {
+    "@methodgrab/eslint-config-standard": "^0.8.0",
     "chai": "^3.2.0",
     "coffee-script": "^1.9.3",
+    "eslint": "^2.13.1",
     "mocha": "^2.2.5"
   }
 }

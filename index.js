@@ -28,7 +28,6 @@
 
 
 const test = function( props ) {
-
 	const el = document.createElement( 'span' );
 
 	for ( const prop in props ) {
@@ -38,13 +37,13 @@ const test = function( props ) {
 	}
 
 	return false;
-
 };
 
 
 const AnimationEvents = {};
 
 
+// Transition end
 const transEndEventNames = {
 	transition       : 'transitionend',
 	WebkitTransition : 'webkitTransitionEnd',
@@ -58,6 +57,7 @@ AnimationEvents.transitionEndEventName = function() {
 };
 
 
+// Animation end
 const animationEndEventNames = {
 	animation       : 'animationend',
 	WebkitAnimation : 'webkitAnimationEnd',
@@ -71,6 +71,7 @@ AnimationEvents.animationEndEventName = function() {
 };
 
 
+// Animation iteration end
 // The `animationiteration` event is fired when an iteration of an animation ends.
 // This event does not occur for animations with an animation-iteration-count of one.
 // https://developer.mozilla.org/en-US/docs/Web/Events/animationiteration
@@ -87,7 +88,7 @@ AnimationEvents.animationIterationEventName = function() {
 };
 
 
-// UMD export
+// UMD export (`returnExports.js`)
 (function( root, factory ) {
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
@@ -100,7 +101,5 @@ AnimationEvents.animationIterationEventName = function() {
 		root.animEvents = factory();
 	}
 }( this, function() {
-
 	return AnimationEvents;
-
 } ));
