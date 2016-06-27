@@ -1,9 +1,9 @@
 {
-  "name": "@methodgrab/anim-events",
+  "name": "@methodgrab/animation-events",
   "version": "0.1.0",
   "description": "Find the JavaScript event name for animations & transitions supported by the current browser",
   "license": "MIT",
-  "repository": "MethodGrab/anim-events",
+  "repository": "MethodGrab/animation-events",
   "author": "MethodGrab",
   "keywords": [
     "browser",
@@ -20,6 +20,9 @@
     "lint": "eslint *.js"
   },
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "@methodgrab/eslint-config-standard": "^0.8.0",
     "ava": "^0.15.2",

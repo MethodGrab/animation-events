@@ -5,7 +5,7 @@
 /*
 	Example:
 	```
-	const animEvents = require( 'anim-events' );
+	const animEvents = require( '@methodgrab/animation-events' );
 
 	let transitionendEvent;
 	let animationendEvent;
