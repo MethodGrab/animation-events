@@ -1,8 +1,13 @@
 module.exports = {
 	extends : [
 		'@methodgrab/eslint-config-standard',
+		'@methodgrab/eslint-config-standard/browser',
 		'@methodgrab/eslint-config-standard/es2015',
 	],
+
+	env : {
+		amd : true,
+	},
 
 	rules : {
 		'no-invalid-this'       : 0,

@@ -1,32 +1,11 @@
-// Get the prefixed version of animation events
+// Get the prefixed version of CSS animation events
 // http://stackoverflow.com/questions/2794148/css3-transition-events
 // http://callmenick.com/post/cross-browser-transition-animation-events-modernizr
 
-/*
-	Example:
-	```
-	const animEvents = require( '@methodgrab/animation-events' );
-
-	let transitionendEvent;
-	let animationendEvent;
-
-	// get & cache the prefixed event names
-	const transitionend = (  ) => { return transitionendEvent ? transitionendEvent : animEvents.transitionEndEventName(); };
-	const animationend  = (  ) => { return animationendEvent ? animationendEvent : animEvents.animationEndEventName(); };
-
-	$( '.el' )
-		.addClass( 'is-transitioning' )
-		.one( transitionend(), (  ) => {
-			console.log( 'Transition complete!' );
-		};
-	```
- */
-
-/* eslint-env browser, amd */
-
 'use strict';
 
-
+// :: ( props: object ) → string|bool
+// Check to see if a given prefix is supported by the browser
 const test = function( props ) {
 	const el = document.createElement( 'span' );
 
@@ -71,7 +50,7 @@ AnimationEvents.animationEndEventName = function() {
 };
 
 
-// Animation iteration end
+// Animation iteration
 // The `animationiteration` event is fired when an iteration of an animation ends.
 // This event does not occur for animations with an animation-iteration-count of one.
 // https://developer.mozilla.org/en-US/docs/Web/Events/animationiteration

@@ -1,7 +1,7 @@
 {
   "name": "@methodgrab/animation-events",
   "version": "0.1.0",
-  "description": "Find the JavaScript event name for animations & transitions supported by the current browser",
+  "description": "Find the (prefixed) JavaScript event names for CSS animations & transitions supported by the current browser",
   "license": "MIT",
   "repository": "MethodGrab/animation-events",
   "author": "MethodGrab",
