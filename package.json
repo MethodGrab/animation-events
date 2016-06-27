@@ -17,15 +17,20 @@
   ],
   "scripts": {
     "test": "npm run lint && ava",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "build": "browserify index.js --standalone animEvents -t babelify --outfile dist/animation-events.js"
   },
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "dist/animation-events.js"
   ],
   "devDependencies": {
     "@methodgrab/eslint-config-standard": "^0.8.0",
     "ava": "^0.15.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
     "eslint": "^2.13.1"
   }
 }

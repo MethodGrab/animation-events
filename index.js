@@ -19,7 +19,7 @@ const test = function( props ) {
 };
 
 
-const AnimationEvents = {};
+const AnimationEvents = module.exports = {};
 
 
 // Transition end
@@ -65,20 +65,3 @@ const animationIterationEventNames = {
 AnimationEvents.animationIterationEventName = function() {
 	return test( animationIterationEventNames );
 };
-
-
-// UMD export (`returnExports.js`)
-(function( root, factory ) {
-	if ( typeof define === 'function' && define.amd ) {
-		// AMD
-		define( [], factory );
-	} else if ( typeof module === 'object' && module.exports ) {
-		// CommonJS
-		module.exports = factory();
-	} else {
-		// Browser globals (root is window)
-		root.animEvents = factory();
-	}
-}( this, function() {
-	return AnimationEvents;
-} ));
