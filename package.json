@@ -16,15 +16,13 @@
     "vendor"
   ],
   "scripts": {
-    "test": "mocha",
+    "test": "npm run lint && ava",
     "lint": "eslint *.js"
   },
   "main": "index.js",
   "devDependencies": {
     "@methodgrab/eslint-config-standard": "^0.8.0",
-    "chai": "^3.2.0",
-    "coffee-script": "^1.9.3",
-    "eslint": "^2.13.1",
-    "mocha": "^2.2.5"
+    "ava": "^0.15.2",
+    "eslint": "^2.13.1"
   }
 }
