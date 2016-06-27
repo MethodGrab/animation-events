@@ -8,6 +8,9 @@
 // :: ( props: object ) → string|bool
 // Check to see if a given prefix is supported by the browser
 
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 var test = function test(props) {
 	var el = document.createElement('span');
 
@@ -20,10 +23,8 @@ var test = function test(props) {
 	return false;
 };
 
-var AnimationEvents = module.exports = {};
-
 // Transition end
-var transEndEventNames = {
+var transitionEndEventNames = {
 	transition: 'transitionend',
 	WebkitTransition: 'webkitTransitionEnd',
 	MozTransition: 'transitionend',
@@ -31,8 +32,8 @@ var transEndEventNames = {
 	msTransition: 'MSTransitionEnd'
 };
 
-AnimationEvents.transitionEndEventName = function () {
-	return test(transEndEventNames);
+var transitionEndEventName = exports.transitionEndEventName = function transitionEndEventName() {
+	return test(transitionEndEventNames);
 };
 
 // Animation end
@@ -44,7 +45,7 @@ var animationEndEventNames = {
 	msAnimation: 'MSAnimationEnd'
 };
 
-AnimationEvents.animationEndEventName = function () {
+var animationEndEventName = exports.animationEndEventName = function animationEndEventName() {
 	return test(animationEndEventNames);
 };
 
@@ -60,7 +61,7 @@ var animationIterationEventNames = {
 	msAnimation: 'MSAnimationIteration'
 };
 
-AnimationEvents.animationIterationEventName = function () {
+var animationIterationEventName = exports.animationIterationEventName = function animationIterationEventName() {
 	return test(animationIterationEventNames);
 };
 

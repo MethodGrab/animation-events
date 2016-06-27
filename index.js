@@ -6,7 +6,7 @@
 
 // :: ( props: object ) → string|bool
 // Check to see if a given prefix is supported by the browser
-const test = function( props ) {
+const test = ( props ) => {
 	const el = document.createElement( 'span' );
 
 	for ( const prop in props ) {
@@ -19,11 +19,8 @@ const test = function( props ) {
 };
 
 
-const AnimationEvents = module.exports = {};
-
-
 // Transition end
-const transEndEventNames = {
+const transitionEndEventNames = {
 	transition       : 'transitionend',
 	WebkitTransition : 'webkitTransitionEnd',
 	MozTransition    : 'transitionend',
@@ -31,9 +28,7 @@ const transEndEventNames = {
 	msTransition     : 'MSTransitionEnd',
 };
 
-AnimationEvents.transitionEndEventName = function() {
-	return test( transEndEventNames );
-};
+export const transitionEndEventName = () => test( transitionEndEventNames );
 
 
 // Animation end
@@ -45,9 +40,7 @@ const animationEndEventNames = {
 	msAnimation     : 'MSAnimationEnd',
 };
 
-AnimationEvents.animationEndEventName = function() {
-	return test( animationEndEventNames );
-};
+export const animationEndEventName = () => test( animationEndEventNames );
 
 
 // Animation iteration
@@ -62,6 +55,4 @@ const animationIterationEventNames = {
 	msAnimation     : 'MSAnimationIteration',
 };
 
-AnimationEvents.animationIterationEventName = function() {
-	return test( animationIterationEventNames );
-};
+export const animationIterationEventName = () => test( animationIterationEventNames );
