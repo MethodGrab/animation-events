@@ -1,30 +1,25 @@
 {
-  "name": "anim-events.js",
+  "name": "@methodgrab/anim-events",
   "version": "0.1.0",
-  "description": "Prefixed CSS animation events helper",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha",
-    "lint": "eslint *.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/methodgrab/anim-events.js.git"
-  },
+  "description": "Find the JavaScript event name for animations & transitions supported by the current browser",
+  "license": "MIT",
+  "repository": "MethodGrab/anim-events",
+  "author": "MethodGrab",
   "keywords": [
+    "browser",
     "css",
+    "events",
     "animations",
     "transitions",
     "prefixed",
     "prefixes",
-    "wrapper"
+    "vendor"
   ],
-  "author": "MethodGrab",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/methodgrab/anim-events.js/issues"
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint *.js"
   },
-  "homepage": "https://github.com/methodgrab/anim-events.js#readme",
+  "main": "index.js",
   "devDependencies": {
     "@methodgrab/eslint-config-standard": "^0.8.0",
     "chai": "^3.2.0",
