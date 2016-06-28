@@ -13,9 +13,9 @@ npm install --save @methodgrab/animation-events
 const animEvents = require( '@methodgrab/animation-events' );
 
 // get & cache the prefixed event names
-const transitionEnd         = animEvents.transitionEndEventName();
-const animationEnd          = animEvents.animationEndEventName();
-const animationIterationEnd = animEvents.animationIterationEventName();
+const transitionEnd      = animEvents.transitionEndEventName();
+const animationEnd       = animEvents.animationEndEventName();
+const animationIteration = animEvents.animationIterationEventName();
 
 $( '.el' )
 	.addClass( 'is-transitioning' )
@@ -24,3 +24,23 @@ $( '.el' )
 		$( '.el' ).removeClass( 'is-transitioning' );
 	};
 ```
+
+
+## API
+
+### `transitionEndEventName()`
+→ `string`  
+Find the (prefixed) [`transitionend`](https://developer.mozilla.org/en-US/docs/Web/Events/transitionend) event name.  
+The `transitionend` event is fired when a CSS transition has completed.
+
+
+### `animationEndEventName()`
+→ `string`  
+Find the (prefixed) [`animationend`](https://developer.mozilla.org/en-US/docs/Web/Events/animationend) event name.  
+The `animationend` event is fired when a CSS animation has completed.
+
+
+### `animationIterationEventName()`
+→ `string`  
+Find the (prefixed) [`animationiteration`](https://developer.mozilla.org/en-US/docs/Web/Events/animationiteration) event name.  
+The `animationiteration` event is fired when **an iteration** of an animation ends.
