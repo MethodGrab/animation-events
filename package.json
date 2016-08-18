@@ -21,6 +21,7 @@
     "build": "browserify index.js --standalone animEvents -t babelify --outfile dist/animation-events.js"
   },
   "main": "index.js",
+  "browser": "dist/animation-events.js",
   "files": [
     "index.js",
     "dist/animation-events.js"
