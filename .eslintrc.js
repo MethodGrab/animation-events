@@ -2,7 +2,7 @@ module.exports = {
 	extends : [
 		'@methodgrab/eslint-config-standard',
 		'@methodgrab/eslint-config-standard/browser',
-		'@methodgrab/eslint-config-standard/es2015',
+		'@methodgrab/eslint-config-standard/esnext',
 	],
 
 	env : {
