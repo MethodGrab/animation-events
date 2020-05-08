@@ -1,4 +1,4 @@
-# CSS Animation Event Names [![Build Status](https://travis-ci.org/MethodGrab/animation-events.svg?branch=master)](https://travis-ci.org/MethodGrab/animation-events)
+# CSS Animation Event Names [![Build Status](https://travis-ci.org/MethodGrab/animation-events.svg?branch=master)](https://travis-ci.org/MethodGrab/animation-events) [![npm](https://img.shields.io/npm/v/@methodgrab/animation-events.svg)](https://www.npmjs.com/package/@methodgrab/animation-events)
 > Find the (prefixed) JavaScript event names for CSS animations & transitions supported by the current browser.
 
 
