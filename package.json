@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "test": "npm run lint && ava",
-    "lint": "eslint *.js",
+    "lint": "eslint \"*.js\"",
     "build": "browserify index.js --standalone animEvents -t babelify --outfile dist/animation-events.js"
   },
   "main": "index.js",
